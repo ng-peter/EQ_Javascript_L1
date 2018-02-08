@@ -1,0 +1,80 @@
+CODE EDITORS:
+(All except Sublime Text are open source and free)
+Recommended to use Atom with Live Server Plugin
+
+Atom (by GitHub):
+https://atom.io/
+Live Server package:
+https://atom.io/packages/atom-live-server
+- You can install the live server package from Atom Settings > Install > search for "atom live server"
+
+Visual Studio Code (by Microsoft):
+https://code.visualstudio.com/
+
+Sublime Text:
+http://www.sublimetext.com/
+
+Brackets (by Adobe):
+http://brackets.io/
+
+
+BROWSERS:
+
+Chrome:
+https://www.google.com/chrome/
+
+Firefox Quantum:
+https://www.mozilla.org/en-US/firefox/
+
+Brave:
+https://brave.com/
+
+Opera:
+www.opera.com/
+
+Microsoft Edge:
+https://www.microsoft.com/en-ca/windows/microsoft-edge
+
+
+
+
+
+
+
+
+CLASS 01
+
+W3Schools HTML / CSS:
+https://www.w3schools.com/html/default.asp
+https://www.w3schools.com/css/default.asp
+
+Mozilla Reference:
+https://developer.mozilla.org/en-US/docs/Web/HTML
+https://developer.mozilla.org/en-US/docs/Web/CSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
