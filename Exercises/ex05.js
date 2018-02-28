@@ -72,10 +72,11 @@ var cd = {
 Part 4: traverse an array of objects
 for each of the book objects in books array, output the book title and rating
 OUTPUT:
-Trump: The Art of the Deal: 3.65
+Harry Potter and the Sorcerer's Stone: 4.45
 The Lord of the Rings: 4.48
-Foundation: 4.14
+In Search of Lost Time: 4.34
 A Game of Thrones: 4.45
+Trump: The Art of the Deal: 3.65
 */
 
 var book1 = {
