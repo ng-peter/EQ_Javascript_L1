@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Blank Page</title>
+  <meta name="description" content="Description of this blank page">
+  <meta name="author" content="Your Name">
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    window.onload = () => {
+      var p = document.getElementsByClassName("paras")[0];
+      p.textContent = "Replacement text in paragraph";
+
+
+      txtBoxOuterDiv.addEventListener('mouseover', () => {p.textContent = "Change the text";})
+      txtBoxOuterDiv.addEventListener('mouseout', () => {p.textContent = "Back to orginal text";})
+
+      txtBoxOuterDiv.onmouseover = () => {changeColor(txtBoxOuterDiv, 'red');}
+      txtBoxOuterDiv.onmouseout = () => {changeColor(txtBoxOuterDiv, 'black');}
+      txtBoxOuterDiv.onmouseout = () => {changeColor(txtBoxOuterDiv, 'black');}
+      txtBoxDiv.onmouseover = () => {changeColor(txtBoxDiv, 'blue');}
+      txtBoxDiv.onmouseout = () => {changeColor(txtBoxDiv, 'black');}
+      textbox.onmouseover = () => {changeColor(textbox, 'yellow');}
+      textbox.onmouseout = () => {changeColor(textbox, 'black');}
+    }
+
+    function changeColor(element, color){
+      console.log(element);
+      element.style.color = color;
+    }
+
+
+
+
+
+
+  </script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- <script src="js/scripts.js"></script> -->
+  <div class="content" id="main">
+    <h1>Header 1</h1>
+    <p class="paras">This is a paragraph</p>
+    <form name="shipping">
+      <fieldset>
+        <legend>shipping method</legend>
+        <label><input type="radio" name="method" value="1st">first class</label>
+        <label><input type="radio" name="method" value="2nd">2 day air</label>
+        <label><input type="radio" name="method" value="overnight">overnight</label>
+      </fieldset>
+      <div id="txtBoxOuterDiv" >
+        text from the outer div
+        <div id="txtBoxDiv">
+          text from the inner div
+          <input type="text" name="textbox" id="textbox" placeholder="Some text here..." value="some text" />
+        </div>
+      </div>
+      <div id="buttons">
+        <button onclick="document.getElementsByClassName('paras')[0].textContent = 'Replacement text in paragraph'; return false;"
+        type="submit" name="submit" value="submit">Submit</button>
+        <button type="reset" name="reset" value="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+  <div class="sidebar">Sidebar text</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
