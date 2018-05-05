@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Blank Page</title>
+  <meta name="description" content="Description of this blank page">
+  <meta name="author" content="Your Name">
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <script>
+    var regxName = /[a-zA-Z]+/;
+    var regxAge = /[0-9]+/;
+    var regxEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    function checkForm(){
+      if(document.getElementById("name").value == "" || document.getElementById("age").value == "" || document.getElementById("email").value == "" || !regxName.test(document.getElementById("name").value) || !regxAge.test(document.getElementById("age").value) || !regxEmail.test(document.getElementById("email").value))
+        return false;
+    }
+  </script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- <script src="js/scripts.js"></script> -->
+  <div class="content" id="main">
+    <h1>Form Validation with JS</h1>
+    <p class="paras">This is a paragraph</p>
+    <form name="regex" onsubmit="return checkForm()">
+      <input type="text" name="name" id="name" placeholder="Name..."/>
+      <input type="text" name="age" id="age" placeholder="Age..." />
+      <input type="text" name="email" id="email" placeholder="Email..."/>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+      <h1>Form Validation with HTML5 without js check</h1>
+      <p class="paras">This is a paragraph</p>
+      <form name="regex2">
+        <input type="text" name="name2" id="name2" placeholder="Name..." required/>
+        <input type="text" name="age2" id="age2" placeholder="Age..." required pattern='[0-9]*' />
+        <input type="email" name="email2" id="email2" placeholder="Email..." required/>
+        <button type="submit" value="submit">Submit</button>
+      </form>
+      <div>
+        <h1>Links</h1>
+        <p>
+          <a href="https://www.w3schools.com/js/js_validation.asp">Javascript Validation</a>
+        </p>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expression Guide</a>
+        </p>
+        <p>
+          <a href="http://emailregex.com/">Email Regular Expressions</a>
+        </p>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
