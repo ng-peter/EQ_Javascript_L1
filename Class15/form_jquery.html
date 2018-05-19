@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Blank Page</title>
+  <meta name="description" content="Description of this blank page">
+  <meta name="author" content="Your Name">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <script>
+    var regxName = /[a-zA-Z]+/;
+    var regxAge = /[0-9]+/;
+    var regxEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    function checkForm(){
+      if(!regxName.test($("#name").val())){
+        console.log('??');
+        $("#error").show();
+        $("#error").text("Name cannot be a digit");
+        return false;
+      }
+      if(!regxAge.test($("#age").val())){
+        console.log('??');
+        $("#error").show();
+        $("#error").text("Age must be a number");
+        return false;
+      }
+      if(!regxEmail.test($("#email").val())){
+        console.log('??');
+        $("#error").show();
+        $("#error").text("Email is not properly formatted");
+        return false;
+      }
+      if($("#name").val() == "" || $("#age").val() == "" || $("#email").val() == ""){
+        return false;
+      }
+    }
+
+  </script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <style>
+    #error {color:red;}
+  </style>
+</head>
+
+<body>
+  <!-- <script src="js/scripts.js"></script> -->
+  <div class="content" id="main">
+    <h1>Form Validation with JS</h1>
+    <p class="paras">This is a paragraph. <span id="error" hidden>ERROR HERE</span></p>
+    <form name="regex" onsubmit="return checkForm()">
+      <input type="text" name="name" id="name" placeholder="Name..."/>
+      <input type="text" name="age" id="age" placeholder="Age..." />
+      <input type="text" name="email" id="email" placeholder="Email..."/>
+      <button type="submit" val()="submit">Submit</button>
+    </form>
+      <h1>Form Validation with HTML5 without js check</h1>
+      <p class="paras">This is a paragraph</p>
+      <form name="regex2">
+        <input type="text" name="name2" id="name2" placeholder="Name..." required/>
+        <input type="text" name="age2" id="age2" placeholder="Age..." required pattern='[0-9]*' />
+        <input type="email" name="email2" id="email2" placeholder="Email..." required/>
+        <button type="submit" val()="submit">Submit</button>
+      </form>
+      <div>
+        <h1>Links</h1>
+        <p>
+          <a href="https://www.w3schools.com/js/js_validation.asp">Javascript Validation</a>
+        </p>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expression Guide</a>
+        </p>
+        <p>
+          <a href="http://emailregex.com/">Email Regular Expressions</a>
+        </p>
+      </div>
+  </div>
+
+
+<script>
+  var nameF = $("#name");
+  nameF.on("focus", ()=>{
+    $("#error").hide();
+    $("#name").css({'background-color':''});
+  });
+  $("#name").on("blur", ()=>{
+    if($("#name").val() == ""){
+      $("#error").show();
+      $("#name").css({'background-color':'#FFC300'});
+    }
+    if($("#name").val() == ""){
+      $("#error").text("Name cannot be empty");
+    }
+  });
+  $("#age").on("focus", ()=>{
+    $("#error").hide();
+    $("#age").css({'background-color':''});
+  });
+  $("#age").on("blur", ()=>{
+    if($("#age").val() == ""){
+      $("#error").show();
+      $("#age").css({'background-color':'#FFC300'});
+    }
+    if($("#age").val() == ""){
+      $("#error").text("Age cannot be empty");
+    }
+  });
+  $("#email").on("focus", ()=>{
+    $("#error").hide();
+    $("#email").css({'background-color':''});
+  });
+  $("#email").on("blur", ()=>{
+    if($("#email").val() == ""){
+      $("#error").show();
+      $("#email").css({'background-color':'#FFC300'});
+    }
+    if($("#email").val() == ""){
+      $("#error").text("Email cannot be empty");
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
