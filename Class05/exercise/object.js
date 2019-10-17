@@ -2,8 +2,9 @@ var obj = {};
 
 for (let i = 0, random = Math.random() * 100; i < random; i++) {
   let randomLetter = (Math.random() * 10) % 3;
+  console.log(randomLetter);
   let letter = "A";
-  switch (randomLetter) {
+  switch (parseInt(randomLetter)) {
     case 0:
       letter = "A";
       break;
