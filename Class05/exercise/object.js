@@ -1,0 +1,19 @@
+var obj = {};
+
+for (let i = 0, random = Math.random() * 100; i < random; i++) {
+  let randomLetter = (Math.random() * 10) % 3;
+  let letter = "A";
+  switch (randomLetter) {
+    case 0:
+      letter = "A";
+      break;
+    case 1:
+      letter = "B";
+      break;
+    default:
+      letter = "C";
+  }
+  obj[i] = letter;
+}
+
+console.log(obj);
