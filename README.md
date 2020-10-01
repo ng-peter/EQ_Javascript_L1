@@ -21,37 +21,35 @@ CSS: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - [W3Schoo
 
 All except Sublime Text are free and open source
 
-### [Visual Studio Code](https://code.visualstudio.com/) (Recommended)
+[Visual Studio Code](https://code.visualstudio.com/) (Recommended)
 
 Important Extensions:
 
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
 
-### [Atom](https://atom.io/)
+[Sublime Text](http://www.sublimetext.com/) (not free)
 
-Recommended package (for basic HTML Editing):
+[Atom](https://atom.io/) - atom-live-server package (Recommended for HTML live previews)
 
-- atom-live-server
-
-### [Brackets](http://brackets.io/)
-
-### [Sublime Text](http://www.sublimetext.com/) (not free)
+[Brackets](http://brackets.io/)
 
 ---
 
 ## Browsers
 
-### [Chrome](https://www.google.com/chrome/) (Recommended)
+Any of the following browsers will be good for development. Chrome, Firefox are usaully the most popular ones among developers, Chrome is recommended if you follow the live classes as I will be using Chrome Canary for demos.
 
-### [Firefox](https://www.mozilla.org/en-US/firefox/)
+[Chrome](https://www.google.com/chrome/)
 
-### [Microsoft Edge](https://www.microsoft.com/en-ca/windows/microsoft-edge)
+[Firefox](https://www.mozilla.org/en-US/firefox/)
 
-### [Opera](www.opera.com/)
+[Microsoft Edge](https://www.microsoft.com/en-ca/windows/microsoft-edge)
 
-### [Brave](https://brave.com/)
+[Opera](www.opera.com/)
 
-### [Chrome Canary](https://www.google.com/intl/en_ca/chrome/canary/)
+[Brave](https://brave.com/)
 
-### [Safari - Enable Developer tools](https://support.apple.com/en-ca/guide/safari/sfri20948/mac)
+[Chrome Canary](https://www.google.com/intl/en_ca/chrome/canary/)
+
+[Safari - Enable Developer tools](https://support.apple.com/en-ca/guide/safari/sfri20948/mac)
