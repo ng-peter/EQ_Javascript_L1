@@ -7,19 +7,13 @@ You will find all the course material related to the HTML Beginner's Course.
 
 ## Prerequisites
 
-You should have a good understanding for HTML & CSS basics.
+You should have a good understanding for HTML & CSS basics prior to starting this course.
 
-HTML
+You can consult the following references as a refresher:
 
-[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
+HTML: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) - [W3Schools](https://www.w3schools.com/html/default.asp)
 
-[W3Schools](https://www.w3schools.com/html/default.asp)
-
-CSS
-
-[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-[W3Schools](https://www.w3schools.com/css/default.asp)
+CSS: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - [W3Schools](https://www.w3schools.com/css/default.asp)
 
 ---
 
