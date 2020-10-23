@@ -74,16 +74,64 @@ if (!parseInt(userText)) {
 var promptMsg = "please enter a number";
 var userText = prompt(promptMsg);
 if (Number(userText) && userText > 50) {
+  // anything inside this section is 51+
+
   alert("Your number is bigger than 50");
   if (userText > 70 && userText < 100) {
+    // between 71 && 99
     alert("Your number is above 70 and below 100");
   }
   if (userText > 70 || userText < 100) {
+    // really everything (almost) 51 +
     alert("Your number is going to match all numbers");
   }
   if ((userText > 70) ^ (userText < 100)) {
+    // 51 - 70 or 100 +
     alert("Your number is anything 70 or below and 100 and above");
   }
 } else {
+  // 50 and below or not a number
   alert("NO GOOD");
 }
+
+//  Example of using dates to see how specificity works
+
+var displayMsg = "DAY IS: ";
+
+// new Date().getDay() will give us 0 - 6 (0 is sunday)
+
+// 1 - 5, week, else weekend
+if (new Date().getDay() > 0) {
+  // not sunday
+  if (new Day().getDay() < 6) {
+    // weekday
+  } else {
+    // saturday
+  }
+} else {
+  // sunday
+}
+
+if (new Date().getDay() > 0 && new Day().getDay() < 6) {
+  // week day
+} else {
+  // weekend
+}
+
+switch (new Date().getDay()) {
+  // weekend
+  case 0:
+  case 6:
+    // weekend
+    console.log("weekend");
+    break;
+
+  default:
+    // week day
+    console.log("weekday");
+}
+
+var num = 10;
+var sign;
+// ?? find out positive or negative with trenary operator
+sign = num > 0 ? "positive" : "negative";
