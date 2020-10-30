@@ -106,11 +106,24 @@ for (var i = 0; i < 10; i++) {
 
 // }
 
-// for (var i = 9; i >= 0;) {
-
-// }
+for (var i = 9; i >= 0; i--) {
+  console.log(i);
+}
 
 // i++
 // ++i
 // i--
 // --i
+
+for (var i = 9; i > -1; i--) {
+  console.log(i);
+}
+
+for (var i = 10; i > 0; ) {
+  console.log(--i);
+}
+
+var i = 10;
+for (; i > 0; ) {
+  console.log(--i);
+}
