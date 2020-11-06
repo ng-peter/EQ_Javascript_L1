@@ -106,3 +106,14 @@ console.log(sum);
 // potentially try:
 // add ONLY numbers in my array and output the sum
 var testVar = [1, 2, "peter", 3, "eater", 4, "pizza"];
+
+// SOLUTION:
+// loop {
+// use some conditional evalution
+// }
+var sum = 0;
+for (var i = 0; i < testVar.length; i++) {
+  if (parseInt(testVar[i])) {
+    sum += testVar[i];
+  }
+}
