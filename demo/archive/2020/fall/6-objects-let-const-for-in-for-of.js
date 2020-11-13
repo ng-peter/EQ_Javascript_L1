@@ -204,3 +204,14 @@ for (let e of foo) {
 // same exercise as at the beginning of class
 // except using the new for loops
 var testVar = [1, 2, "peter", 3, "eater", 4, "pizza"];
+
+// SOLUTION
+
+let sum = 0;
+for (let n of testVar) {
+  //console.log(n);
+  if (parseInt(n)) {
+    sum += n;
+  }
+}
+console.log(sum);
