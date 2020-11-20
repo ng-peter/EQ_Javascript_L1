@@ -153,3 +153,78 @@ function copyObj() {
 }
 
 let copy2 = copyObj(copy1);
+
+// SOLUTIONS:
+
+function copyObj(origObj) {
+  //   let copy2 = JSON.parse(JSON.stringify(origObj));
+  //   return copy2;
+  return JSON.parse(JSON.stringify(origObj));
+}
+
+let copy3 = {
+  name: "object to copy",
+  type: copy1.type,
+  lang: "javascript",
+};
+
+let arr1 = [
+  2143,
+  1234,
+  123,
+  4,
+  2,
+  134,
+  1234,
+  [1234, 1234, 123, 4, 2314, 1234],
+  [234, 234, 234, 23, 4234],
+  2344,
+];
+
+function copyArr(originalArray) {
+  let tempArr = [];
+  for (let i = 0; i < originalArray.length; i++) {
+    tempArr[i] = originalArray[i];
+  }
+  return tempArr;
+}
+
+let arr2 = copyArr(arr1);
+
+function copyArrFix(originalArray) {
+  // temp arr to be returned
+  let tempArr = [];
+  // loop thru original array
+  for (let i = 0; i < originalArray.length; i++) {
+    // check elements in original if each is array or simple copy
+    if (Array.isArray(originalArray[i])) {
+      // if array, have to create deep copy to be returned
+      tempArr[i] = copyArrFix(originalArray[i]);
+    } else {
+      // if non-array, do a simply copy by value
+      tempArr[i] = originalArray[i];
+    }
+  }
+  // return temp copy with everything!
+  return tempArr;
+}
+
+let arr3 = copyArrFix(arr2);
+
+// equivalent for copying an obj
+
+function copyObj(originalObj) {
+  let tempObj = {};
+  for (let prop in originalObj) {
+    if (typeof originalObj[prop] === "object") {
+      tempObj[prop] = copyObj(originalObj[prop]);
+      // console.log(originalObj[prop]);
+    } else {
+      tempObj[prop] = originalObj[prop];
+      // console.log(originalObj[prop]);
+    }
+  }
+  return tempObj;
+}
+
+let copy4 = copyObj(copy3);
