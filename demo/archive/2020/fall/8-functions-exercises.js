@@ -160,3 +160,25 @@ function isPalindrome4(wordToCompare) {
   for (let i = 0; i < wordToCompare.length; i++) {}
   for (let j = wordToCompare.length - 1; j >= 0; j++) {}
 }
+
+// SOLUTION
+
+function isPalindrome4(wordToCompare) {
+  wordToCompare = wordToCompare.toLowerCase();
+  let j = wordToCompare.length - 1;
+  let compareBoolean;
+  for (let i = 0; i < wordToCompare.length; i++) {
+    if (wordToCompare[i] === " ") {
+      continue;
+    }
+    while (wordToCompare[j] === " ") {
+      j--;
+    }
+    console.log(wordToCompare[i], i);
+    console.log(wordToCompare[j], j);
+    compareBoolean = wordToCompare[i] === wordToCompare[j];
+    j--;
+    if (!compareBoolean) break;
+  }
+  return compareBoolean;
+}
