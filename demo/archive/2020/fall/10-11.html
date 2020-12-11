@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: 3rem;
+      }
+      div {
+        background-color: powderblue;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selectors</h1>
+    <p>example with span <span>id</span>:</p>
+    <div class="samples" id="testOrigin">
+      This is a div tag with an id of 'origin'
+    </div>
+    <p>example with class:</p>
+    <div class="samples messages">
+      This is a div tag with a class of 'messages'
+    </div>
+    <div class="samples messages">
+      This is another div tag with a <em> class of 'messages'</em>
+    </div>
+
+    <div class="content" id="main">
+      <h1>Header 1</h1>
+      <p class="paras">This is a paragraph</p>
+      <form name="shipping">
+        <fieldset>
+          <legend>shipping method</legend>
+          <label
+            ><input type="radio" name="method" value="1st" />first class</label
+          >
+          <label
+            ><input type="radio" name="method" value="2nd" />2 day air</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="method"
+              value="overnight"
+            />overnight</label
+          >
+        </fieldset>
+      </form>
+    </div>
+    <div class="sidebar">Sidebar text</div>
+  </body>
+</html>
