@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainbow</title>
+  </head>
+  <body>
+    <div class="content" id="main">
+      <h1>Rainbow!</h1>
+      <div class="red">&nbsp;</div>
+      <div class="yellow">&nbsp;</div>
+      <div class="green">&nbsp;</div>
+      <div class="blue">&nbsp;</div>
+      <div id="five">&nbsp;FIVE</div>
+      <div id="six">&nbsp;</div>
+      <div id="seven">&nbsp;</div>
+      <div id="eight">&nbsp;</div>
+      <div class="red">&nbsp;</div>
+      <div class="yellow">&nbsp;</div>
+      <div class="green">&nbsp;</div>
+      <div class="blue">&nbsp;</div>
+      <div class="yellow">&nbsp;</div>
+      <div class="yellow">&nbsp;</div>
+      <div class="yellow">&nbsp;</div>
+      <div class="yellow">&nbsp;</div>
+    </div>
+    <script>
+      // for IDs you can do this:
+      five.addEventListener("mouseenter", () => {
+        five.style.backgroundColor = "red";
+      });
+      five.addEventListener("mouseout", () => {
+        five.style.backgroundColor = "white";
+      });
+      document.querySelector("#five").addEventListener("mouseenter", () => {
+        document.querySelector("#five").style.color = "white";
+      });
+      document.getElementById("five").addEventListener("mouseout", () => {
+        document.getElementById("five").style.color = "black";
+      });
+
+      // for classes you HAVE to do this:
+      document.querySelector(".red").addEventListener("mouseenter", () => {
+        document.querySelector(".red").style.backgroundColor = "red";
+      });
+      document
+        .getElementsByClassName("red")[0]
+        .addEventListener("mouseout", () => {
+          document.getElementsByClassName("red")[0].style.backgroundColor =
+            "white";
+        });
+
+      // working with multiple elements with same classname
+      document.querySelectorAll(".yellow").forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+          element.style.backgroundColor = "yellow";
+        });
+      });
+
+      document.querySelectorAll(".yellow").forEach((element) => {
+        element.addEventListener("mouseout", () => {
+          element.style.backgroundColor = "black";
+        });
+      });
+    </script>
+  </body>
+</html>
