@@ -13,15 +13,35 @@
     </div>
     <script>
       window.addEventListener("mousemove", () => {
-        console.log(event.clientX, event.clientY);
+        // console.log(event.clientX, event.clientY);
         mouseX.innerText = "X: " + event.clientX;
         mouseY.innerText = "Y: " + event.clientY;
         document.body.style.backgroundColor =
-          "rgb(" + reverseColor(event.clientX) + "," + event.clientY + ",255)";
+          "rgb(" +
+          reverseColor(event.clientX) +
+          "," +
+          reverseColor(event.clientY) +
+          ",255)";
       });
 
       function reverseColor(mouseCoord) {
-        return mouseCoord;
+        // 0 - 255, color remains the same
+        // 256+, coordinates should start reversing itself towards 0
+        // and then once 0, repeat normal pattern
+        // if:
+        // 0-255 512-767
+        // else:
+        // 256-511 768-1023
+        console.log(parseInt(mouseCoord / 256) % 2);
+
+        if (parseInt(mouseCoord / 256) % 2) {
+          // odd operation
+          // 256-511 > 0-255 > 255-0
+          return 255 - (mouseCoord % 256);
+        } else {
+          // even operation
+          return mouseCoord % 256;
+        }
       }
     </script>
   </body>

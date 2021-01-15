@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Demo</title>
+  </head>
+  <body>
+    <div class="content" id="main">
+      <h1>Form Validation with JS</h1>
+      <p class="paras">
+        This is a paragraph. <span id="error" hidden>ERROR HERE</span>
+      </p>
+      <form name="regex" onsubmit="return checkForm()">
+        <input type="text" name="name" id="name" placeholder="Name..." />
+        <input type="text" name="age" id="age" placeholder="Age..." />
+        <input type="text" name="email" id="email" placeholder="Email..." />
+        <button type="submit" value="submit">Submit</button>
+      </form>
+      <h1>Form Validation with HTML5 without js check</h1>
+      <p class="paras">This is a paragraph</p>
+      <form name="regex2">
+        <input
+          type="text"
+          name="name2"
+          id="name2"
+          placeholder="Name..."
+          required
+        />
+        <input
+          type="text"
+          name="age2"
+          id="age2"
+          placeholder="Age..."
+          required
+          pattern="[0-9]*"
+        />
+        <input
+          type="email"
+          name="email2"
+          id="email2"
+          placeholder="Email..."
+          required
+        />
+        <button type="submit" value="submit">Submit</button>
+      </form>
+      <div>
+        <h1>Links</h1>
+        <p>
+          <a href="https://www.w3schools.com/js/js_validation.asp"
+            >Javascript Validation</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions"
+            >Regular Expression Guide</a
+          >
+        </p>
+        <p>
+          <a href="http://emailregex.com/">Email Regular Expressions</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
